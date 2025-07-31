@@ -19,14 +19,15 @@ public class AdLikeCalculate {
 		int dailyshared=0;
 		//daily 5 adb is shared 
 		//the liked persond share the ad to 3 persons
-		int n=1;
+		int n=0;
 		while(d>0) {
 			likes=(5+dailyshared)/2;
 			total_likes+=likes;
 			dailyshared=likes*3;
 			d--;
-			System.out.println("Day "+n+" like is "+likes);
 			n++;
+			System.out.println("Day "+n+" like is "+likes);
+			
 			
 		}
 		System.out.println("Total likes for "+d+" is "+total_likes);
